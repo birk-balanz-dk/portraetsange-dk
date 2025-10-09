@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portraetsange.dk - Når ord bliver toner og minder bliver musik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-slate-100">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Portraetsange Logo" class="h-12 w-auto">
+                <div>
+                    <h1 class="text-2xl font-bold text-slate-800">Portraetsange.dk</h1>
+                    <p class="text-sm text-slate-600 italic">Når ord bliver toner og minder bliver musik</p>
+                </div>
+            </div>
+            <a href="#bestil" class="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors font-medium">
+                Bestil nu
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 py-16 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+                Personlige portraetsange lavet ud fra dine fortællinger
+            </h2>
+            <p class="text-xl text-slate-600 mb-8">
+                Til dig, om dig og dem du holder af.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <div class="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm">
+                    <svg class="w-5 h-5 text-rose-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                    <span class="text-slate-700">Unik gave</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm">
+                    <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    <span class="text-slate-700">Din historie</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm">
+                    <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+                    <span class="text-slate-700">Professionel musik</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center text-slate-800 mb-12">
+            Sådan fungerer det
+        </h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-2xl font-bold text-teal-600">1</span>
+                </div>
+                <h4 class="text-xl font-bold text-slate-800 mb-3">Del din historie</h4>
+                <p class="text-slate-600">
+                    Fortæl os om personen, anledningen og de øjeblikke der betyder noget. Vi samler trådene sammen.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-2xl font-bold text-amber-600">2</span>
+                </div>
+                <h4 class="text-xl font-bold text-slate-800 mb-3">Vi skaber sangen</h4>
+                <p class="text-slate-600">
+                    Vores team skriver teksten på dansk og producerer musik der matcher stemningen og anledningen.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-2xl font-bold text-rose-600">3</span>
+                </div>
+                <h4 class="text-xl font-bold text-slate-800 mb-3">Du får en musikvideo</h4>
+                <p class="text-slate-600">
+                    Modtag en komplet musikvideo med tekster og lyd - klar til at dele eller overraske med.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center text-slate-800 mb-4">
+            Lyt til eksempler
+        </h3>
+        <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+            Hver sang er unik og skabt ud fra personlige historier
+        </p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Video 1: Mai Song -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/x7MyWSQ2kWc" title="Mai Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-slate-800 mb-2">Mai Song</h4>
+                    <div class="flex gap-2 text-sm flex-wrap">
+                        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Fødselsdag</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Santana Reggae</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video 2: Ida Sang -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JtMN1rTeuoo" title="Ida Sang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-slate-800 mb-2">Ida Sang</h4>
+                    <div class="flex gap-2 text-sm flex-wrap">
+                        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Bryllup</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Jazz Ballad</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video 3: Love from a Distance -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KzYIDZ4eG4Q" title="Love from a Distance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-slate-800 mb-2">Love from a Distance</h4>
+                    <div class="flex gap-2 text-sm flex-wrap">
+                        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Mindekoncert</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Folk Ballad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="bestil" class="max-w-3xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-xl shadow-lg p-8">
+            <h3 class="text-3xl font-bold text-slate-800 mb-6 text-center">
+                Bestil din portraetsang
+            </h3>
+            <p class="text-slate-600 mb-8 text-center">
+                Kontakt os via Google Forms
+            </p>
+            
+            <div class="text-center">
+                <a href="https://forms.gle/Wvi4TZRqUQSwhnMa7" target="_blank" class="inline-block bg-teal-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-teal-700 transition-colors text-lg">
+                    Udfyld bestillingsskema
+                </a>
+                <p class="text-sm text-slate-500 mt-4">Du bliver sendt videre til Google Forms</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+                <span class="text-xl font-bold">Portraetsange.dk</span>
+            </div>
+            <p class="text-slate-400 italic mb-4">
+                Når ord bliver toner og minder bliver musik
+            </p>
+            <p class="text-slate-500 text-sm">
+                © 2025 Portraetsange.dk - Alle rettigheder forbeholdes
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
