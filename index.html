@@ -7,10 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        body { 
+            font-family: 'Inter', sans-serif;
+            background-color: #f5e6c5;
+        }
     </style>
 </head>
-<body class="bg-gradient-to-b from-slate-50 to-slate-100">
+<body>
     
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
@@ -19,7 +22,7 @@
                 <img src="logo.png" alt="Portraetsange Logo" class="h-12 w-auto">
                 <div>
                     <h1 class="text-2xl font-bold text-slate-800">Portraetsange.dk</h1>
-                    <p class="text-sm text-slate-600 italic">Når ord bliver toner og minder bliver musik</p>
+                    <p class="text-sm text-slate-600 italic font-serif">Når ord bliver toner og minder bliver musik</p>
                 </div>
             </div>
             <a href="#bestil" class="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors font-medium">
@@ -29,34 +32,47 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="max-w-6xl mx-auto px-4 py-16 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-                Personlige portrætsange lavet ud fra dine fortællinger
-            </h2>
-            <p class="text-xl text-slate-600 mb-8">
-                Til dig, om dig og dem du holder af.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4 mb-4">
-                <div class="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm">
-                    <svg class="w-5 h-5 text-rose-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
-                    <span class="text-slate-700">Unik gave</span>
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Hero Image - Left Side -->
+            <div class="order-2 md:order-1">
+                <img src="hero.png" alt="Personlige portrætssange" class="w-full h-auto rounded-xl shadow-lg">
+            </div>
+            
+            <!-- Hero Text - Right Side -->
+            <div class="order-1 md:order-2">
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-800 font-serif mb-6">
+                    Personlige portrætssange<br>
+				lavet ud fra<br>
+				dine fortællinger
+                </h2>
+                <p class="text-xl text-slate-600 font-serif mb-8">
+                    Til dig, om dig og dem du holder af.
+                </p>
+                <div class="flex flex-col gap-4 mb-8">
+                    <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-lg shadow-sm">
+                        <svg class="w-6 h-6 text-rose-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                        <span class="text-slate-700 font-medium">Unik gave</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-lg shadow-sm">
+                        <svg class="w-6 h-6 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        <span class="text-slate-700 font-medium">Din historie</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-lg shadow-sm">
+                        <svg class="w-6 h-6 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+                        <span class="text-slate-700 font-medium">Professionel musik</span>
+                    </div>
                 </div>
-                <div class="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm">
-                    <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                    <span class="text-slate-700">Din historie</span>
-                </div>
-                <div class="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm">
-                    <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
-                    <span class="text-slate-700">Professionel musik</span>
-                </div>
+                <a href="#bestil" class="inline-block bg-teal-600 text-white px-8 py-4 rounded-lg hover:bg-teal-700 transition-colors font-medium text-lg">
+                    Bestil din sang nu
+                </a>
             </div>
         </div>
     </section>
 
     <!-- How It Works -->
-    <section class="max-w-6xl mx-auto px-4 py-6">
-        <h3 class="text-3xl font-bold text-center text-slate-800 mb-12">
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center text-slate-800 font-serif mb-12">
             Sådan fungerer det
         </h3>
         <div class="grid md:grid-cols-3 gap-8">
@@ -92,10 +108,10 @@
 
     <!-- Portfolio -->
     <section class="max-w-6xl mx-auto px-4 py-16">
-        <h3 class="text-3xl font-bold text-center text-slate-800 mb-4">
+        <h3 class="text-3xl font-bold text-center text-slate-800 font-serif mb-4">
             Lyt til eksempler
         </h3>
-        <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+        <p class="text-center text-slate-600 font-serif mb-12 max-w-2xl mx-auto">
             Hver sang er unik og skabt ud fra personlige historier
         </p>
         <div class="grid md:grid-cols-3 gap-8">
@@ -106,10 +122,13 @@
                 </div>
                 <div class="p-4">
                     <h4 class="font-bold text-slate-800 mb-2">Mai Sang</h4>
-                    <div class="flex gap-2 text-sm flex-wrap">
+                    <div class="flex gap-2 text-sm flex-wrap mb-3">
                         <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Mindedag</span>
-                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Country</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Slow Country</span>
                     </div>
+                    <p class="text-sm text-slate-600 font-serif italic">
+                        En varm og personlig hyldest til Mai, skrevet med kærlighed og glimt i øjet. Sangen fortæller om hendes styrke, hendes evne til at skabe tryghed og hendes særlige plads i hverdagen. Med bløde harmonier og et kærligt tekstunivers bliver hun fejret som en, der både rummer andre og står stærkt i sig selv — en sang om nærvær, omsorg og respekt.
+                    </p>
                 </div>
             </div>
             
@@ -120,10 +139,13 @@
                 </div>
                 <div class="p-4">
                     <h4 class="font-bold text-slate-800 mb-2">Ida Sang</h4>
-                    <div class="flex gap-2 text-sm flex-wrap">
-                        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Bryllup</span>
-                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Jazz Ballad</span>
+                    <div class="flex gap-2 text-sm flex-wrap mb-3">
+                        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Mindedag</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Dansk revyballade</span>
                     </div>
+                    <p class="text-sm text-slate-600 font-serif italic">
+                        En personlig bluesballade skrevet til Ida, Alexander og hans kones "gulddatter". Sangen hylder deres dybe bånd, fælles minder fra Skotland, og Idas rejse fra sårbarhed til styrke. Med varme og humor fortæller den om hendes liv, kærlighed og pædagogiske virke, og afsluttes med en spoken outro, der understreger deres særlige relation.
+                    </p>
                 </div>
             </div>
             
@@ -134,10 +156,13 @@
                 </div>
                 <div class="p-4">
                     <h4 class="font-bold text-slate-800 mb-2">Love from a Distance</h4>
-                    <div class="flex gap-2 text-sm flex-wrap">
-                        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Mindesang</span>
+                    <div class="flex gap-2 text-sm flex-wrap mb-3">
+                        <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full">Mindesang</span>
                         <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Folk Ballad</span>
                     </div>
+                    <p class="text-sm text-slate-600 font-serif italic">
+                        En engelsk sang om længsel og kærlighed på afstand. Med bløde harmonier og melankolsk stemning udtrykker den håbet om at blive husket og elsket, selv når man ikke er fysisk tæt på. Sangen balancerer sårbarhed og styrke, og fungerer som en musikalsk kærlighedserklæring til dem, der er langt væk — men stadig tæt på hjertet.
+                    </p>
                 </div>
             </div>
         </div>
@@ -146,10 +171,10 @@
     <!-- Order Form -->
     <section id="bestil" class="max-w-3xl mx-auto px-4 py-16">
         <div class="bg-white rounded-xl shadow-lg p-8">
-            <h3 class="text-3xl font-bold text-slate-800 mb-6 text-center">
-                Bestil din portrætsang
+            <h3 class="text-3xl font-bold text-slate-800 font-serif mb-6 text-center">
+                Bestil din portrætssang
             </h3>
-            <p class="text-slate-600 mb-8 text-center">
+            <p class="text-slate-600 font-serif mb-8 text-center">
                 Kontakt os via Google Forms
             </p>
             
@@ -169,7 +194,7 @@
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
                 <span class="text-xl font-bold">Portraetsange.dk</span>
             </div>
-            <p class="text-slate-400 italic mb-4">
+            <p class="text-slate-400 italic font-serif mb-4">
                 Når ord bliver toner og minder bliver musik
             </p>
             <p class="text-slate-500 text-sm">
