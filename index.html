@@ -11,10 +11,50 @@
             font-family: 'Inter', sans-serif;
             background-color: #f5e6c5;
         }
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        .cookie-banner.hide {
+            transform: translateY(100%);
+        }
     </style>
 </head>
 <body>
     
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <h3 class="font-bold text-slate-800 mb-2">🍪 Vi bruger cookies</h3>
+                    <p class="text-sm text-slate-600">
+                        Vi bruger cookies til at forbedre din oplevelse på vores hjemmeside. Ved at klikke "Accepter alle" accepterer du brugen af alle cookies. Du kan også vælge "Kun nødvendige" for kun at tillade essentielle cookies.
+                        <a href="#privatlivspolitik" class="text-teal-600 hover:text-teal-700 underline ml-1">Læs vores privatlivspolitik</a>
+                    </p>
+                </div>
+                <div class="flex gap-3 w-full md:w-auto">
+                    <button onclick="acceptCookies(false)" class="flex-1 md:flex-none px-4 py-2 border border-slate-300 rounded-lg text-slate-700 hover:bg-slate-50 transition-colors font-medium">
+                        Kun nødvendige
+                    </button>
+                    <button onclick="acceptCookies(true)" class="flex-1 md:flex-none px-6 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors font-medium">
+                        Accepter alle
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -233,13 +273,13 @@
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0vCLMXNwn4c" title="Her Name in Smoke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="p-4">
-                    <h4 class="font-bold text-slate-800 mb-2">Her Name is Smoke</h4>
+                    <h4 class="font-bold text-slate-800 mb-2">Her Name in Smoke</h4>
                     <div class="flex gap-2 text-sm flex-wrap mb-3">
                         <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Engelsk sang</span>
                         <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Rusty Country</span>
                     </div>
                     <p class="text-sm text-slate-600 font-serif italic">
-                        En stille, følelsesladet ballade om længsel, loyalitet og de valg, man aldrig tog. Fortælleren mindes en intens, men uforløst forbindelse — en aften, et blik, en mulighed, der blev valgt fra af hensyn til ægteskabets ære. Med poetiske billeder og en blød, næsten hviskende vokal, udspiller sangen sig som en indre monolog, hvor drømmen om “hende” lever i skyggerne, i stilheden, og i det rum hvor længslen stadig bor. En sang om det hellige i det ikke-udlevede — og om at tillade sig selv ét sidste drømmetræk.
+                        En stille, følelsesladet ballade om længsel, loyalitet og de valg, man aldrig tog. Fortælleren mindes en intens, men uforløst forbindelse — en aften, et blik, en mulighed, der blev valgt fra af hensyn til ægteskabets ære. Med poetiske billeder og en blød, næsten hviskende vokal, udspiller sangen sig som en indre monolog, hvor drømmen om "hende" lever i skyggerne, i stilheden, og i det rum hvor længslen stadig bor. En sang om det hellige i det ikke-udlevede — og om at tillade sig selv ét sidste drømmetræk.
                     </p>
                 </div>
             </div>
@@ -299,6 +339,44 @@
         </div>
     </section>
 
+    <!-- Privacy Policy Section -->
+    <section id="privatlivspolitik" class="max-w-4xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-xl shadow-sm p-8">
+            <h3 class="text-3xl font-bold text-slate-800 font-serif mb-6">Privatlivspolitik</h3>
+            
+            <div class="space-y-6 text-slate-600">
+                <div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Cookies og sporingsteknologier</h4>
+                    <p class="mb-2">Vi bruger cookies til at forbedre din oplevelse på vores hjemmeside. Der er to typer cookies:</p>
+                    <ul class="list-disc pl-6 space-y-1">
+                        <li><strong>Nødvendige cookies:</strong> Disse er påkrævet for at hjemmesiden kan fungere korrekt, herunder cookie-samtykke.</li>
+                        <li><strong>Funktionelle cookies:</strong> Disse hjælper os med at huske dine præferencer og forbedre din oplevelse.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Indlejret indhold fra YouTube</h4>
+                    <p>Vores hjemmeside indeholder videoer fra YouTube. Når du ser disse videoer, kan YouTube indsamle information om din aktivitet. YouTube er ejet af Google og deres privatlivspolitik gælder for dette indhold.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Dataindsamling via formularer</h4>
+                    <p>Når du udfylder vores bestillingsskema via Google Forms, indsamles de oplysninger, du selv afgiver. Disse data bruges udelukkende til at behandle din bestilling og skabe din personlige sang. Vi deler ikke dine oplysninger med tredjeparter uden dit samtykke.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Dine rettigheder</h4>
+                    <p>Du har ret til at få indsigt i, rette eller slette dine personoplysninger. Kontakt os via vores bestillingsskema, hvis du har spørgsmål til behandling af dine data.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Ændringer til denne politik</h4>
+                    <p>Vi forbeholder os retten til at opdatere denne privatlivspolitik. Ændringer vil blive offentliggjort på denne side.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-slate-800 text-white py-12">
         <div class="max-w-6xl mx-auto px-4 text-center">
@@ -309,11 +387,52 @@
             <p class="text-slate-400 italic font-serif mb-4">
                 Når ord bliver toner og minder bliver musik
             </p>
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="text-slate-400">Lavet med</span>
+                <svg class="w-5 h-5 text-rose-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                <span class="text-slate-400">i Danmark</span>
+            </div>
             <p class="text-slate-500 text-sm">
                 © 2025 Portraetsange.dk - Alle rettigheder forbeholdes
             </p>
         </div>
     </footer>
+
+    <!-- Cookie Banner JavaScript -->
+    <script>
+        // Check if user has already made a cookie choice
+        function checkCookieConsent() {
+            const consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                // Show banner after a short delay
+                setTimeout(() => {
+                    document.getElementById('cookieBanner').classList.add('show');
+                }, 1000);
+            }
+        }
+
+        // Accept cookies
+        function acceptCookies(acceptAll) {
+            const consentValue = acceptAll ? 'all' : 'necessary';
+            localStorage.setItem('cookieConsent', consentValue);
+            
+            // Hide banner
+            const banner = document.getElementById('cookieBanner');
+            banner.classList.remove('show');
+            banner.classList.add('hide');
+            
+            // If user accepts all, you can initialize analytics here
+            if (acceptAll) {
+                // Example: initializeAnalytics();
+                console.log('User accepted all cookies');
+            } else {
+                console.log('User accepted only necessary cookies');
+            }
+        }
+
+        // Run on page load
+        document.addEventListener('DOMContentLoaded', checkCookieConsent);
+    </script>
     
 </body>
 </html>
