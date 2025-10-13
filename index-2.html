@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portraetsange.dk - Når ord bliver toner og minder bliver musik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { 
+            font-family: 'Inter', sans-serif;
+            background-color: #f5e6c5;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Portraetsange Logo" class="h-12 w-auto">
+                <div>
+                    <h1 class="text-2xl font-bold text-slate-800">Portraetsange.dk</h1>
+                    <p class="text-sm text-slate-600 italic font-serif">Når ord bliver toner og minder bliver musik</p>
+                </div>
+            </div>
+            <a href="#bestil" class="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors font-medium">
+                Bestil nu
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Hero Image - Left Side -->
+            <div class="order-2 md:order-1">
+                <img src="hero.png" alt="Personlige portrætssange" class="w-full h-auto rounded-xl shadow-lg">
+            </div>
+            
+            <!-- Hero Text - Right Side -->
+            <div class="order-1 md:order-2">
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-800 font-serif mb-6">
+                    Personlige portrætssange lavet ud fra dine fortællinger
+                </h2>
+                <p class="text-xl text-slate-600 font-serif mb-8">
+                    Til dig, om dig og dem du holder af.
+                </p>
+                <div class="flex flex-col gap-4 mb-8">
+                    <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-lg shadow-sm">
+                        <svg class="w-6 h-6 text-rose-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                        <span class="text-slate-700 font-medium">Unik gave</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-lg shadow-sm">
+                        <svg class="w-6 h-6 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        <span class="text-slate-700 font-medium">Din historie</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-lg shadow-sm">
+                        <svg class="w-6 h-6 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+                        <span class="text-slate-700 font-medium">Professionel musik</span>
+                    </div>
+                </div>
+                <a href="#bestil" class="inline-block bg-teal-600 text-white px-8 py-4 rounded-lg hover:bg-teal-700 transition-colors font-medium text-lg">
+                    Bestil din sang nu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center text-slate-800 font-serif mb-12">
+            Sådan fungerer det
+        </h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-2xl font-bold text-teal-600">1</span>
+                </div>
+                <h4 class="text-xl font-bold text-slate-800 mb-3">Fortælle historien</h4>
+                <p class="text-slate-600">
+                    Fortæl os om personen, anledningen og de øjeblikke der betyder noget. Vi samler trådene sammen.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-2xl font-bold text-amber-600">2</span>
+                </div>
+                <h4 class="text-xl font-bold text-slate-800 mb-3">Vi skaber sangen</h4>
+                <p class="text-slate-600">
+                    Vores team skriver teksten på dansk eller engelsk og producerer musik der matcher stemningen og anledningen.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-2xl font-bold text-rose-600">3</span>
+                </div>
+                <h4 class="text-xl font-bold text-slate-800 mb-3">Du får en musikvideo</h4>
+                <p class="text-slate-600">
+                    Modtag en komplet musikvideo med sangtekster og lyd - klar til at nyde, dele eller overraske med.
+                </p>
+            </div>
+        </div>
+    </section>
+	<!-- New Section: What Makes It Different -->
+    <section class="py-16" style="background-color: #f5e6c5;">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-serif text-slate-800 mb-4">Hvad gør vores resultat så særligt?</h2>
+                <p class="text-lg text-slate-600 font-serif max-w-2xl mx-auto">
+                    Vi skaber ikke bare musik — vi kuraterer oplevelser, der ærer din historie.
+                </p>
+            </div>
+
+            <!-- Three Cards -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Curation -->
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 text-center">Musik med mening <br> sSræddersyet til dig</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Din historie får ikke bare en klick. Den får den helt rigtige lyd: genre, stemning og arrangement, der rammer netop dét øjeblik. Fra sørgmodig blues til festlig latin-reggae — hver sang er skabt med omhu og følelse.
+                    </p>
+                </div>
+
+                <!-- Card 2: Collaboration -->
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 text-center">Menneske + teknologi <br> Musik med mening</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Selvfølgelig bruger vi også moderne værktøjer, ja — men det er vores erfaring, musikalitet og især den menneskelige forståelse, der får sangen til at ramme. Teknologien skaber lyden. Vi skaber betydningen.
+                    </p>
+                </div>
+
+                <!-- Card 3: Complete Production -->
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 text-center">Fra første snak <br> til færdigt værk</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Det hele starter med din udfyldte formular — og derfra tager vi over. Du får ikke bare en sang. Du får et komplet kunstværk med professionel lyd, undertekster og visuel identitet.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Optional: Bottom CTA -->
+            <div class="text-center mt-12">
+                <p class="text-slate-600 font-serif italic">
+                    Alle kan bruge moderne KI teknologien — men ikke alle kan skabe magien.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center text-slate-800 font-serif mb-4">
+            Lyt til eksempler
+        </h3>
+        <p class="text-center text-slate-600 font-serif mb-12 max-w-2xl mx-auto">
+            Hver sang er unik og skabt ud fra personlige historier
+        </p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Video 1: Mai Song -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/x7MyWSQ2kWc" title="Mai Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-slate-800 mb-2">Mai Sang</h4>
+                    <div class="flex gap-2 text-sm flex-wrap mb-3">
+                        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Mindedag</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Slow Country</span>
+                    </div>
+                    <p class="text-sm text-slate-600 font-serif italic">
+                        En varm og personlig hyldest til Mai, skrevet med kærlighed og glimt i øjet. Sangen fortæller om hendes styrke, hendes evne til at skabe tryghed og hendes særlige plads i hverdagen. Med bløde harmonier og et kærligt tekstunivers bliver hun fejret som en, der både rummer andre og står stærkt i sig selv — en sang om nærvær, omsorg og respekt.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Video 2: Ida Sang -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JtMN1rTeuoo" title="Ida Sang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-slate-800 mb-2">Ida Sang</h4>
+                    <div class="flex gap-2 text-sm flex-wrap mb-3">
+                        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Mindedag</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Dansk revyballade</span>
+                    </div>
+                    <p class="text-sm text-slate-600 font-serif italic">
+                        En personlig bluesballade skrevet til Ida, Alexander og hans kones "gulddatter". Sangen hylder deres dybe bånd, fælles minder fra Skotland, og Idas rejse fra sårbarhed til styrke. Med varme og humor fortæller den om hendes liv, kærlighed og pædagogiske virke, og afsluttes med en spoken outro, der understreger deres særlige relation.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Video 3: Love from a Distance -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KzYIDZ4eG4Q" title="Love from a Distance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-slate-800 mb-2">Love from a Distance</h4>
+                    <div class="flex gap-2 text-sm flex-wrap mb-3">
+                        <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full">Mindesang</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Folk Ballad</span>
+                    </div>
+                    <p class="text-sm text-slate-600 font-serif italic">
+                        En engelsk sang om længsel og kærlighed på afstand. Med bløde harmonier og melankolsk stemning udtrykker den håbet om at blive husket og elsket, selv når man ikke er fysisk tæt på. Sangen balancerer sårbarhed og styrke, og fungerer som en musikalsk kærlighedserklæring til dem, der er langt væk — men stadig tæt på hjertet.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Video 4: Her Name in Smoke -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0vCLMXNwn4c" title="Her Name in Smoke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-slate-800 mb-2">Her Name is Smoke</h4>
+                    <div class="flex gap-2 text-sm flex-wrap mb-3">
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Engelsk sang</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Rusty Country</span>
+                    </div>
+                    <p class="text-sm text-slate-600 font-serif italic">
+                        En stille, følelsesladet ballade om længsel, loyalitet og de valg, man aldrig tog. Fortælleren mindes en intens, men uforløst forbindelse — en aften, et blik, en mulighed, der blev valgt fra af hensyn til ægteskabets ære. Med poetiske billeder og en blød, næsten hviskende vokal, udspiller sangen sig som en indre monolog, hvor drømmen om “hende” lever i skyggerne, i stilheden, og i det rum hvor længslen stadig bor. En sang om det hellige i det ikke-udlevede — og om at tillade sig selv ét sidste drømmetræk.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Video 5: Mai - Under trappen -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XF1aPAWR8KA" title="Mai - Under trappen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-slate-800 mb-2">Mai - Under trappen</h4>
+                    <div class="flex gap-2 text-sm flex-wrap mb-3">
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Arbejdsliv</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Teater Revy Musical</span>
+                    </div>
+                    <p class="text-sm text-slate-600 font-serif italic">
+                        Et satirisk og teatralsk rocknummer, hvor Mai selv står i rampelyset og fortæller sin historie. Med sassy vokal og orkestral energi ruller hun frustrationerne ud: et malerværksted under en trappe, kaotiske rammer for elever med behov for struktur, og en skolemad fyldt med linser. Sangen balancerer humor og alvor, og giver Mai en kraftfuld stemme i kampen for respekt, plads og pædagogisk værdighed.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Video 6: Fløjstrup Blues -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uei3HuhTFXg" title="Fløjstrup Blues" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-bold text-slate-800 mb-2">Fløjstrup Blues</h4>
+                    <div class="flex gap-2 text-sm flex-wrap mb-3">
+                        <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full">Hyldest</span>
+                        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Folk Blues</span>
+                    </div>
+                    <p class="text-sm text-slate-600 font-serif italic">
+                        En livsglad og kærlig vise til Fru Fløjstrup — genbo, ven og tapetdronning. Med humor, varme og poetisk flair hylder sangen hendes hverdag mellem sparekassen, drivhuset og naboskabet. Teksten maler et portræt af en kvinde med krøllet hår, smittende latter og evnen til at gøre selv regnvejrsdage solrige. En sang fyldt med glød, grin og fløjstrupflugt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="bestil" class="max-w-3xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-xl shadow-lg p-8">
+            <h3 class="text-3xl font-bold text-slate-800 font-serif mb-6 text-center">
+                Bestil din portrætssang
+            </h3>
+            <p class="text-slate-600 font-serif mb-8 text-center">
+                Kontakt os via Google Forms
+            </p>
+            
+            <div class="text-center">
+                <a href="https://forms.gle/Wvi4TZRqUQSwhnMa7" target="_blank" class="inline-block bg-teal-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-teal-700 transition-colors text-lg">
+                    Udfyld bestillingsskema
+                </a>
+                <p class="text-sm text-slate-500 mt-4">Du bliver sendt videre til Google Forms</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+                <span class="text-xl font-bold">Portraetsange.dk</span>
+            </div>
+            <p class="text-slate-400 italic font-serif mb-4">
+                Når ord bliver toner og minder bliver musik
+            </p>
+            <p class="text-slate-500 text-sm">
+                © 2025 Portraetsange.dk - Alle rettigheder forbeholdes
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
